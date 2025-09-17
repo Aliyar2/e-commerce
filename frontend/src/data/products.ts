@@ -1,0 +1,140 @@
+export interface Product {
+  id: number;
+  name: string;
+  price: number;
+  oldPrice?: number;
+  description?: string;
+  rating?: number;
+  reviews?: number;
+  brand?: string;
+  category?: string;
+  discount?: string;
+  colors?: string[];
+  images?: string[];
+  sale?: boolean;
+  tabCategory: "NEW ARRIVALS" | "BEST SELLER" | "FEATURED" | "SPECIAL OFFER";
+}
+
+export const products: Product[] = [
+  {
+    id: 1,
+    name: "Dictum morbi",
+    price: 120,
+    oldPrice: 150,
+    description: "Elegant watch for modern style.",
+    rating: 4,
+    reviews: 234,
+    brand: "Coaster Furniture",
+    category: "Watches",
+    discount: "20% Cashback",
+    colors: ["blue", "black"],
+    images: ["/products/a.png", "/products/image 1.png"],
+    sale: true,
+    tabCategory: "NEW ARRIVALS",
+  },
+  {
+    id: 2,
+    name: "Smart Lamp",
+    price: 80,
+    oldPrice: 100,
+    description: "Stylish modern lamp.",
+    rating: 5,
+    reviews: 120,
+    brand: "Lighting Co",
+    category: "Lamps",
+    colors: ["white", "yellow"],
+    images: ["/products/image 3-1.png"],
+    sale: false,
+    tabCategory: "BEST SELLER",
+  },
+  {
+    id: 3,
+    name: "Modern Sofa",
+    price: 350,
+    oldPrice: 420,
+    description: "Comfortable and stylish sofa for your living room.",
+    rating: 4,
+    reviews: 89,
+    brand: "Comfort Line",
+    category: "Furniture",
+    colors: ["gray", "brown"],
+    images: ["/products/image 3.png"],
+    sale: true,
+    tabCategory: "FEATURED",
+  },
+  {
+    id: 4,
+    name: "Office Desk",
+    price: 200,
+    oldPrice: 250,
+    description: "Spacious wooden desk for office or home use.",
+    rating: 4,
+    reviews: 60,
+    brand: "WorkPro",
+    category: "Desks",
+    colors: ["oak", "black"],
+    images: ["/products/image 15.png"],
+    sale: false,
+    tabCategory: "SPECIAL OFFER",
+  },
+  {
+    id: 5,
+    name: "Luxury Bed",
+    price: 500,
+    oldPrice: 600,
+    description: "King size bed with premium comfort and design.",
+    rating: 5,
+    reviews: 145,
+    brand: "DreamHome",
+    category: "Beds",
+    colors: ["white", "beige"],
+    images: ["/products/image 23.png"],
+    sale: true,
+    tabCategory: "BEST SELLER",
+  },
+  {
+    id: 6,
+    name: "Bookshelf",
+    price: 90,
+    oldPrice: 120,
+    description: "Modern bookshelf with multiple compartments.",
+    rating: 3,
+    reviews: 44,
+    brand: "StoragePro",
+    category: "Shelves",
+    colors: ["brown", "black"],
+    images: ["/products/image 32.png"],
+    sale: false,
+    tabCategory: "NEW ARRIVALS",
+  },
+  {
+    id: 7,
+    name: "Smart Chair",
+    price: 150,
+    oldPrice: 200,
+    description: "Ergonomic chair with smart design for maximum comfort.",
+    rating: 4,
+    reviews: 77,
+    brand: "ErgoTech",
+    category: "Chairs",
+    colors: ["blue", "black", "gray"],
+    images: ["/products/image 1166.png"],
+    sale: true,
+    tabCategory: "FEATURED",
+  },
+  {
+    id: 8,
+    name: "Table Lamp",
+    price: 60,
+    oldPrice: 75,
+    description: "Minimalist lamp with warm light for cozy evenings.",
+    rating: 5,
+    reviews: 32,
+    brand: "Lighting Co",
+    category: "Lamps",
+    colors: ["white", "gold"],
+    images: ["/products/image 1168-1.png", "/products/image 1168.png"],
+    sale: false,
+    tabCategory: "SPECIAL OFFER",
+  },
+];
